@@ -40,3 +40,107 @@ Combinatorial Dual Indexes
 Combinatorial Unique Dual Indexes
 
 
+## Primary analysis
+.bcl file are the primary data that comes out of the sequencer. Its one for every tile that is sequenced. 
+
+*RTA2 and RTA3
+
+## Image Analysis Overview RTA 1
+
+RunInfo.xml, images and this will result in the data files.
+
+
+Color normalization is done in the first 26 cycles
+
+As we progress throught the cycles, the signals would drop. It used to compensate by amplifying the intensity. 
+An example: there was a loss of signal and the machine was calling this as a G
+
+Cluster location are .clocs
+Cluster Intensities are .cif
+
+Base calling and quality score are .bcl
+
+Phasing needs to be <0.4%. This happens when a library in the cluster will have a base being read that is shorter on the sequence
+Prephasing will be sequencing the read that is next to the majority of them being read.
+
+These could happen alot with expired reagents. 
+Could happen due to worng washing, tween 20 concentration/contamination
+Do temporal lines washing. On Miseq do it once a month. Use bleach.
+
+On four color chemistry, the base with the highest intensity is called.
+
+*Pass filter*
+
+IT measures the intenisty of the highest signal and then 
+
+Clusters passing filters are those one that remain after the calculation of pass filter.
+
+On the pattern flow cell there is a possibility of having, in addition to having polyclonal cluster
+
+
+Quality Scores: estimate of the probabliity of error in base calling
+Quality model:
+
+
+
+Q30: what fraction of the reads should be better than Q30 (1 in 1000 error or 99.9% accuracy) 
+
+
+
+Percent aligned and error rate
+Spiking PhiX
+% Aligned is the percent of clusters in which the first 25 cycles align to the PhiX reference genome
+Error rate is the rate of mis-matches between sequencing data and PhiX reference genome
+
+For low complexity libraries, spiking PhiX is recommended so that there is mixed material 
+
+So lower the complexity, higher the spike-in of the PhiX
+
+## Downstream Analysis Options
+
+BaseSpace Sequence Hub
+Local Run Manager
+
+Have a reference guide for any instrument that you use handy. It can change quite frequently. Miseq: once every few moths, NovaSeq: quicker
+
+
+
+# NovaSeq 
+
+
+Data output: 65-3000Gb
+
+There are four flow cells available.
+
+SP: 0.4Tb
+S1: 0.5Tb
+S2: 1.25Tb
+S4: 3Tb
+
+Keep the used S4 flow cells handy. They can help with the wash
+
+When you are transitioning to NovaSeq or a new platform what kind of determination would you make 
+*Sequence Coverage Calculator*: to help not sequence any more than you need to and what kit to use
+
+### Two workflows: 
+Standard: Run one library pool across the 
+XP: Run separate library in each lane
+
+## Kit components
+Cluster Cartridge
+Library Tube
+ExAmp Reagents
+SBS Cartridge
+Flow Cell
+SP Manifold
+Buffer Cartridge
+
+### XP Components
+Dock , Lane Kit
+
+## 
+
+Denature and Neutralize Library
+Pooled input library 1-3nM
+Final concentration of 250pM on S4 Flow Cell
+
