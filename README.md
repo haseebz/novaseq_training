@@ -144,3 +144,18 @@ Denature and Neutralize Library
 Pooled input library 1-3nM
 Final concentration of 250pM on S4 Flow Cell
 
+# Loading the flow cell
+Take out the flow cell and wipe it with isopronanol wipes and then wipe the flow cell with lens paper. After when the flow cell is placed on the instrument, take a can of air and blow it all over.
+
+Make sure you clean the solution out of the MiSeq by washing it with water thoroughly. Dry it, shake it, then dry it again.
+
+Make sure the gaskets are also positioned well in MiSeq flow cell before putting it in the instrument.
+
+## Dragon FPGA for sequence alignment
+
+
+## Demultiplex
+Illumina has started to move away from bcl2fastq and is now using bclconvert
+
+## Sequecing Reference Guide
+Use this to understand the 
